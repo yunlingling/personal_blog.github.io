@@ -1,6 +1,6 @@
 # Site settings
 title: YunLingLing's Blog
-SEOTitle: yunlingling的博客 | YunLingLing Blog
+SEOTitle: yunlingling 博客 | YunLingLing Blog
 header-img: img/post-bg-desk.jpg
 email: yanghuayunlingling@gmail.com
 description: "Every failure is leading towards success."
@@ -15,6 +15,8 @@ sidebar-about-description: "Goals determine what you going to be!"
 sidebar-avatar: /img/personal_photo.jpg     # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
+# Search
+search: true
 
 # SNS settings
 RSS: false
@@ -24,8 +26,12 @@ github_username:    yunlingling
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+
+# Permalink
+# See: https://github.com/kaeyleo/jekyll-theme-H2O/issues/35
 permalink: pretty
-paginate: 10
+paginate: 5
+paginate_path: 'page:num'
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
 
@@ -47,8 +53,7 @@ highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
-
-
+disqus: true
 # 评论系统
 # Disqus（https://disqus.com/）
 # disqus_username: qiubaiying
@@ -88,12 +93,12 @@ featured-condition-size: 1              # 相同标签数量大于这个数，�
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-
-
-# Friends
-friends: [
-    {
-        title: "yanghua",
-        href: "www.baidu.com"
-    }
-]
+#
+#
+## Friends
+#friends: [
+#    {
+#        title: "yanghua",
+#        href: "www.baidu.com"
+#    }
+#]
